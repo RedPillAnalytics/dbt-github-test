@@ -1,3 +1,3 @@
-{{ config(materialized='table') }}
+{{ config(materialized='table', transient=false) }}
 
 select * from nice_ride
