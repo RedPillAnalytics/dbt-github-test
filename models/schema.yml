@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: events
+  - name: ride_test
     description: A table containing data about Minneapolis' ride share program
     columns:
         - name: tripduration
