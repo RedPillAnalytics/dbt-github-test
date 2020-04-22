@@ -1,0 +1,22 @@
+version: 2
+models:
+  - name: events
+    description: A table containing data about Minneapolis' ride share program
+    columns:
+        - name: tripduration
+          description: The total length of a ride.
+          tests:
+              - not_null
+        - name: start_time
+          quote: true
+          description: "When the event occurred in UTC (eg. 2018-01-01 12:00:00)"
+          tests:
+              - not_null
+        - name: end_tiime
+          quote: true
+          #tags: ['pii']
+          description: "When the event ended"
+        - name: start_station
+          description: The unique identifier for the station where the rider checked out a bike.
+          tests:
+              - not_null
