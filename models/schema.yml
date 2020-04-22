@@ -14,7 +14,6 @@ models:
               - not_null
         - name: end_time
           quote: true
-          #tags: ['pii']
           description: "When the event ended"
         - name: start_station_id
           description: The unique identifier for the station where the rider checked out a bike.
