@@ -12,11 +12,11 @@ models:
           description: "When the event occurred in UTC (eg. 2018-01-01 12:00:00)"
           tests:
               - not_null
-        - name: end_tiime
+        - name: end_time
           quote: true
           #tags: ['pii']
           description: "When the event ended"
-        - name: start_station
+        - name: start_station_id
           description: The unique identifier for the station where the rider checked out a bike.
           tests:
               - not_null
